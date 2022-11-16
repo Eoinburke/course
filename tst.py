@@ -177,26 +177,37 @@ max = input("How many tickets?:")
 if max > str(5):
     print('im sorry you are over the max')
 
+if max < str(5):
+    print(input("How old are you?:"))
+
 age = 12
+
 
 age = input("How old are you?:")
 if age < str(12):
     print("You are not old nough hommie")
 else:
-    if age > str(12):
-        print("enjoy the ride dawg")
-if age >= str(12) and age < str(18):
-   age = input("Have you a school ID?:")
-if age == "Y":
+
+ if age >= str(12) and age < str(18):
+  if age > str(12):
+        print(input("Have you a school ID?:"))
+
+ elif age == "Y":
         print("enjoy the ride rember you are only allowed 3 rides")
-elif age == "N":
+
+ if age == "N":
         print("Not today dawg")
+
 ride = 3
+
 ride = input("How many times have you done this ride?:")
+
 if ride == str(3):
     print("health issue, enjoy")
+
 if ride < str(3):
     print("enjoy")
+
 if ride > str(3):
     print("you have done it more than 3 times ") 
 
